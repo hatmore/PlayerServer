@@ -1,0 +1,7 @@
+# Normalise line endings: store LF in the repository (Linux project)
+* text=auto eol=lf
+
+# Binary files
+*.png binary
+*.jpg binary
+*.db binary

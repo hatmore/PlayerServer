@@ -1,0 +1,32 @@
+# CMake / build output
+build/
+cmake-build-*/
+CMakeCache.txt
+CMakeFiles/
+*.o
+*.a
+*.so
+EPlayerServer
+!EPlayerServer.vcxproj*
+
+# Visual Studio (Linux remote project)
+.vs/
+*.user
+*.suo
+*.VC.db
+*.VC.opendb
+obj/
+bin/
+
+# runtime artefacts
+log/
+*.log
+*.sock
+*.db
+test.txt
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

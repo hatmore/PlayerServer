@@ -1,84 +1,84 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="CServer.cpp" />
-    <ClCompile Include="Epoll.cpp" />
-    <ClCompile Include="HttpParser.cpp" />
-    <ClCompile Include="http_parser.c" />
-    <ClCompile Include="Logger.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="Thread.cpp" />
-    <ClCompile Include="sqlite3\sqlite3.c">
+    <ClCompile Include="src\CServer.cpp" />
+    <ClCompile Include="src\Epoll.cpp" />
+    <ClCompile Include="src\HttpParser.cpp" />
+    <ClCompile Include="third_party\http_parser\http_parser.c" />
+    <ClCompile Include="src\Logger.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Thread.cpp" />
+    <ClCompile Include="third_party\sqlite3\sqlite3.c">
       <Filter>sqlite3</Filter>
     </ClCompile>
-    <ClCompile Include="DatabaseHelper.cpp" />
-    <ClCompile Include="Sqlite3Client.cpp" />
-    <ClCompile Include="MysqlClient.cpp" />
-    <ClCompile Include="Crypto.cpp" />
-    <ClCompile Include="jsoncpp\json_reader.cpp">
+    <ClCompile Include="src\DatabaseHelper.cpp" />
+    <ClCompile Include="src\Sqlite3Client.cpp" />
+    <ClCompile Include="src\MysqlClient.cpp" />
+    <ClCompile Include="src\Crypto.cpp" />
+    <ClCompile Include="third_party\jsoncpp\json_reader.cpp">
       <Filter>jsoncpp</Filter>
     </ClCompile>
-    <ClCompile Include="jsoncpp\json_value.cpp">
+    <ClCompile Include="third_party\jsoncpp\json_value.cpp">
       <Filter>jsoncpp</Filter>
     </ClCompile>
-    <ClCompile Include="jsoncpp\json_writer.cpp">
+    <ClCompile Include="third_party\jsoncpp\json_writer.cpp">
       <Filter>jsoncpp</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="CServer.h" />
-    <ClInclude Include="EdoyunPlayerServer.h" />
-    <ClInclude Include="Epoll.h" />
-    <ClInclude Include="Function.h" />
-    <ClInclude Include="HttpParser.h" />
-    <ClInclude Include="http_parser.h" />
-    <ClInclude Include="Logger.h" />
-    <ClInclude Include="Process.h" />
-    <ClInclude Include="Socket.h" />
-    <ClInclude Include="Thread.h" />
-    <ClInclude Include="ThreadPool.h" />
-    <ClInclude Include="sqlite3\sqlite3.h">
+    <ClInclude Include="include\CServer.h" />
+    <ClInclude Include="include\EdoyunPlayerServer.h" />
+    <ClInclude Include="include\Epoll.h" />
+    <ClInclude Include="include\Function.h" />
+    <ClInclude Include="include\HttpParser.h" />
+    <ClInclude Include="third_party\http_parser\http_parser.h" />
+    <ClInclude Include="include\Logger.h" />
+    <ClInclude Include="include\Process.h" />
+    <ClInclude Include="include\Socket.h" />
+    <ClInclude Include="include\Thread.h" />
+    <ClInclude Include="include\ThreadPool.h" />
+    <ClInclude Include="third_party\sqlite3\sqlite3.h">
       <Filter>sqlite3</Filter>
     </ClInclude>
-    <ClInclude Include="sqlite3\sqlite3ext.h">
+    <ClInclude Include="third_party\sqlite3\sqlite3ext.h">
       <Filter>sqlite3</Filter>
     </ClInclude>
-    <ClInclude Include="DatabaseHelper.h" />
-    <ClInclude Include="Public.h" />
-    <ClInclude Include="Sqlite3Client.h" />
-    <ClInclude Include="MysqlClient.h" />
-    <ClInclude Include="Crypto.h" />
-    <ClInclude Include="jsoncpp\allocator.h">
+    <ClInclude Include="include\DatabaseHelper.h" />
+    <ClInclude Include="include\Public.h" />
+    <ClInclude Include="include\Sqlite3Client.h" />
+    <ClInclude Include="include\MysqlClient.h" />
+    <ClInclude Include="include\Crypto.h" />
+    <ClInclude Include="third_party\jsoncpp\allocator.h">
       <Filter>jsoncpp</Filter>
     </ClInclude>
-    <ClInclude Include="jsoncpp\assertions.h">
+    <ClInclude Include="third_party\jsoncpp\assertions.h">
       <Filter>jsoncpp</Filter>
     </ClInclude>
-    <ClInclude Include="jsoncpp\config.h">
+    <ClInclude Include="third_party\jsoncpp\config.h">
       <Filter>jsoncpp</Filter>
     </ClInclude>
-    <ClInclude Include="jsoncpp\forwards.h">
+    <ClInclude Include="third_party\jsoncpp\forwards.h">
       <Filter>jsoncpp</Filter>
     </ClInclude>
-    <ClInclude Include="jsoncpp\json.h">
+    <ClInclude Include="third_party\jsoncpp\json.h">
       <Filter>jsoncpp</Filter>
     </ClInclude>
-    <ClInclude Include="jsoncpp\json_features.h">
+    <ClInclude Include="third_party\jsoncpp\json_features.h">
       <Filter>jsoncpp</Filter>
     </ClInclude>
-    <ClInclude Include="jsoncpp\json_tool.h">
+    <ClInclude Include="third_party\jsoncpp\json_tool.h">
       <Filter>jsoncpp</Filter>
     </ClInclude>
-    <ClInclude Include="jsoncpp\reader.h">
+    <ClInclude Include="third_party\jsoncpp\reader.h">
       <Filter>jsoncpp</Filter>
     </ClInclude>
-    <ClInclude Include="jsoncpp\value.h">
+    <ClInclude Include="third_party\jsoncpp\value.h">
       <Filter>jsoncpp</Filter>
     </ClInclude>
-    <ClInclude Include="jsoncpp\version.h">
+    <ClInclude Include="third_party\jsoncpp\version.h">
       <Filter>jsoncpp</Filter>
     </ClInclude>
-    <ClInclude Include="jsoncpp\writer.h">
+    <ClInclude Include="third_party\jsoncpp\writer.h">
       <Filter>jsoncpp</Filter>
     </ClInclude>
   </ItemGroup>
@@ -91,7 +91,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <None Include="jsoncpp\json_valueiterator.inl">
+    <None Include="third_party\jsoncpp\json_valueiterator.inl">
       <Filter>jsoncpp</Filter>
     </None>
   </ItemGroup>

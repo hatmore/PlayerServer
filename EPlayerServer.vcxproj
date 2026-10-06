@@ -75,67 +75,67 @@
   <ImportGroup Label="PropertySheets" />
   <PropertyGroup Label="UserMacros" />
   <ItemGroup>
-    <ClCompile Include="Crypto.cpp" />
-    <ClCompile Include="CServer.cpp" />
-    <ClCompile Include="DatabaseHelper.cpp" />
-    <ClCompile Include="Epoll.cpp" />
-    <ClCompile Include="HttpParser.cpp" />
-    <ClCompile Include="http_parser.c">
+    <ClCompile Include="src\Crypto.cpp" />
+    <ClCompile Include="src\CServer.cpp" />
+    <ClCompile Include="src\DatabaseHelper.cpp" />
+    <ClCompile Include="src\Epoll.cpp" />
+    <ClCompile Include="src\HttpParser.cpp" />
+    <ClCompile Include="third_party\http_parser\http_parser.c">
       <CAdditionalWarning Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">switch;no-deprecated-declarations;empty-body;return-type;parentheses;no-pointer-sign;no-format;uninitialized;unreachable-code;unused-function;unused-value;unused-variable;%(CAdditionalWarning)</CAdditionalWarning>
       <CppAdditionalWarning Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">switch;no-deprecated-declarations;empty-body;return-type;parentheses;no-format;uninitialized;unreachable-code;unused-function;unused-value;unused-variable;%(CppAdditionalWarning)</CppAdditionalWarning>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-Wno-conversion %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
-    <ClCompile Include="jsoncpp\json_reader.cpp" />
-    <ClCompile Include="jsoncpp\json_value.cpp" />
-    <ClCompile Include="jsoncpp\json_writer.cpp" />
-    <ClCompile Include="Logger.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="MysqlClient.cpp" />
-    <ClCompile Include="Sqlite3Client.cpp" />
-    <ClCompile Include="sqlite3\sqlite3.c">
+    <ClCompile Include="third_party\jsoncpp\json_reader.cpp" />
+    <ClCompile Include="third_party\jsoncpp\json_value.cpp" />
+    <ClCompile Include="third_party\jsoncpp\json_writer.cpp" />
+    <ClCompile Include="src\Logger.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\MysqlClient.cpp" />
+    <ClCompile Include="src\Sqlite3Client.cpp" />
+    <ClCompile Include="third_party\sqlite3\sqlite3.c">
       <CAdditionalWarning Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">switch;no-deprecated-declarations;empty-body;return-type;parentheses;no-pointer-sign;no-format;uninitialized;unreachable-code;unused-function;unused-value;unused-variable;%(CAdditionalWarning)</CAdditionalWarning>
       <CppAdditionalWarning Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">switch;no-deprecated-declarations;empty-body;return-type;parentheses;no-format;uninitialized;unreachable-code;unused-function;unused-value;unused-variable;%(CppAdditionalWarning)</CppAdditionalWarning>
       <AdditionalOptions Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">-Wno-conversion %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
-    <ClCompile Include="Thread.cpp" />
+    <ClCompile Include="src\Thread.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Crypto.h" />
-    <ClInclude Include="CServer.h" />
-    <ClInclude Include="DatabaseHelper.h" />
-    <ClInclude Include="EdoyunPlayerServer.h" />
-    <ClInclude Include="Epoll.h" />
-    <ClInclude Include="Function.h" />
-    <ClInclude Include="HttpParser.h" />
-    <ClInclude Include="http_parser.h" />
-    <ClInclude Include="jsoncpp\allocator.h" />
-    <ClInclude Include="jsoncpp\assertions.h" />
-    <ClInclude Include="jsoncpp\config.h" />
-    <ClInclude Include="jsoncpp\forwards.h" />
-    <ClInclude Include="jsoncpp\json.h" />
-    <ClInclude Include="jsoncpp\json_features.h" />
-    <ClInclude Include="jsoncpp\json_tool.h" />
-    <ClInclude Include="jsoncpp\reader.h" />
-    <ClInclude Include="jsoncpp\value.h" />
-    <ClInclude Include="jsoncpp\version.h" />
-    <ClInclude Include="jsoncpp\writer.h" />
-    <ClInclude Include="Logger.h" />
-    <ClInclude Include="MysqlClient.h" />
-    <ClInclude Include="Process.h" />
-    <ClInclude Include="Public.h" />
-    <ClInclude Include="Socket.h" />
-    <ClInclude Include="Sqlite3Client.h" />
-    <ClInclude Include="sqlite3\sqlite3.h" />
-    <ClInclude Include="sqlite3\sqlite3ext.h" />
-    <ClInclude Include="Thread.h" />
-    <ClInclude Include="ThreadPool.h" />
+    <ClInclude Include="include\Crypto.h" />
+    <ClInclude Include="include\CServer.h" />
+    <ClInclude Include="include\DatabaseHelper.h" />
+    <ClInclude Include="include\EdoyunPlayerServer.h" />
+    <ClInclude Include="include\Epoll.h" />
+    <ClInclude Include="include\Function.h" />
+    <ClInclude Include="include\HttpParser.h" />
+    <ClInclude Include="third_party\http_parser\http_parser.h" />
+    <ClInclude Include="third_party\jsoncpp\allocator.h" />
+    <ClInclude Include="third_party\jsoncpp\assertions.h" />
+    <ClInclude Include="third_party\jsoncpp\config.h" />
+    <ClInclude Include="third_party\jsoncpp\forwards.h" />
+    <ClInclude Include="third_party\jsoncpp\json.h" />
+    <ClInclude Include="third_party\jsoncpp\json_features.h" />
+    <ClInclude Include="third_party\jsoncpp\json_tool.h" />
+    <ClInclude Include="third_party\jsoncpp\reader.h" />
+    <ClInclude Include="third_party\jsoncpp\value.h" />
+    <ClInclude Include="third_party\jsoncpp\version.h" />
+    <ClInclude Include="third_party\jsoncpp\writer.h" />
+    <ClInclude Include="include\Logger.h" />
+    <ClInclude Include="include\MysqlClient.h" />
+    <ClInclude Include="include\Process.h" />
+    <ClInclude Include="include\Public.h" />
+    <ClInclude Include="include\Socket.h" />
+    <ClInclude Include="include\Sqlite3Client.h" />
+    <ClInclude Include="third_party\sqlite3\sqlite3.h" />
+    <ClInclude Include="third_party\sqlite3\sqlite3ext.h" />
+    <ClInclude Include="include\Thread.h" />
+    <ClInclude Include="include\ThreadPool.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="jsoncpp\json_valueiterator.inl" />
+    <None Include="third_party\jsoncpp\json_valueiterator.inl" />
   </ItemGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>include;third_party;third_party\http_parser;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>_DEBUG</PreprocessorDefinitions>
     </ClCompile>
     <Link>
