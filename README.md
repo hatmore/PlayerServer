@@ -1,3 +1,5 @@
+**中文** | [English](README.en.md)
+
 # PlayerServer（易播服务器）
 
 基于 HTTP 协议的加密播放器服务器，提供用户登录校验、视频密钥分发等服务。请求通过 HTTP 承载，响应体使用 JSON 传递业务数据。
